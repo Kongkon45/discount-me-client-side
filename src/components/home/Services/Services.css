@@ -1,0 +1,5 @@
+.services__bg__color{
+    border-radius: 10.49px;
+    background: var(--Gray-Scales-White, #FFF);
+    box-shadow: 0px 20.979px 87.414px 0px rgba(22, 25, 50, 0.07);
+}
