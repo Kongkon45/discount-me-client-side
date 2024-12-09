@@ -1,11 +1,9 @@
 "use client";
-import Link from "next/link";
 import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { IoEyeOutline } from "react-icons/io5";
 import { IoEyeOffOutline } from "react-icons/io5";
 import "./SetNewPassword.css";
-import { FcGoogle } from "react-icons/fc";
 
 type Inputs = {
   password: string;
