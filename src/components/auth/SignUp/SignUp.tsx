@@ -1,9 +1,17 @@
 import React from 'react';
+import SignUpBanner from './SignUpBanner/SignUpBanner';
+import SignUpForm from './SignUpForm/SignUpForm';
 
 const SignUp = () => {
     return (
         <div>
-            SignUp
+            <section>
+                <SignUpBanner/>
+            </section>
+
+            <section>
+                <SignUpForm/>
+            </section>
         </div>
     );
 };
