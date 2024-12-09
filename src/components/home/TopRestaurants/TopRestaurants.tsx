@@ -22,7 +22,7 @@ const TopRestaurants = () => {
           </p>
         </div>
         <div>
-          <Link href={`/explore-estaurants`}>
+          <Link href={`/explore-restaurants`}>
             <button className="flex items-center gap-1 text-base font-normal text-dark-100">
               See All{" "}
               <svg
