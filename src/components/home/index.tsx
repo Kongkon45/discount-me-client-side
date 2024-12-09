@@ -1,9 +1,17 @@
 import React from 'react';
+import HomeBanner from './HomeBanner/HomeBanner';
+import TopRestaurants from './TopRestaurants/TopRestaurants';
 
 const AllHomeComponents = () => {
     return (
         <div>
-            home
+            <section>
+            <HomeBanner/>
+            </section>
+
+            <section>
+            <TopRestaurants/>
+            </section>
         </div>
     );
 };

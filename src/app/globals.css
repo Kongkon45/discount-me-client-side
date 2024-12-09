@@ -4,12 +4,12 @@
 
 
 body {
-  @apply bg-[#F5F5F5] overflow-x-hidden;
+  @apply bg-[#FFFFFF] overflow-x-hidden;
 }
 
 
 .container {
-  @apply px-5 md:px-[80px] lg:px-[100px] xl:px-[120px] 2xl:px-[150px]  mx-auto;
+  @apply px-5 md:px-[40px] lg:px-[60px] xl:px-[80px] 2xl:px-[110px] 3xl:px-[140px] 4xl:px-[170px] 5xl:px-[200px]  mx-auto;
 }
 
 .padding__top{

@@ -7,12 +7,44 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'xs': '280px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1440px',
+      '3xl': '1536px',
+      '4xl': '1736px',
+      '5xl': '1920px',
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: "#FF7D29",
+        },
+        secondary: {
+          DEFAULT: "#00B047",
+        },
+        dark: {
+          DEFAULT: "#000000",
+          50: "#334A55",
+          100: "#232323",
+          200: "#758888",
+        },
+        gray: {
+          DEFAULT: "#F8FAFC",
+          // 50: "#334A55",
+          // 100: "#232323",
+          // 200: "#758888",
+        },
+        
       },
+      // fontFamily: {
+      //   montserrat: ['var(--font-montserrat)'],
+      // },
     },
   },
   plugins: [],
 } satisfies Config;
+
