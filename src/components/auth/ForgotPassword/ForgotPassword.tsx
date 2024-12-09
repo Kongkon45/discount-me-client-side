@@ -1,6 +1,7 @@
 "use client";
 import { useForm, SubmitHandler } from "react-hook-form";
 import "./ForgotPassword.css";
+import Link from "next/link";
 
 type Inputs = {
   email: string;
@@ -34,10 +35,11 @@ const ForgotPassword = () => {
           {errors.email && <span>This field is required</span>}
           
           <div className="mt-[20px]">
+          <Link href="/set-new-password">
           <input
-            className="w-full bg-primary text-white text-[20px] font-bold py-3 rounded-full"
+            className="w-full bg-primary text-white text-[20px] font-bold cursor-pointer py-3 rounded-full"
             type="submit" value="Submit"
-          />
+          /></Link>
           </div>
         </form>
       </div>
