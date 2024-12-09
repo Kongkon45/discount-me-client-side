@@ -24,7 +24,7 @@ const SignUpForm = () => {
   return (
     <div className="bg-gray-300 pt-[20px] pb-[100px]">
       <div className="signUp__Cart_bg w-full md:w-1/2 lg:w-2/5 mx-auto pb-[20px]">
-        <h4 className="text-[48px] text-center text-dark-400 font-semibold pb-[20px]">
+        <h4 className="text-3xl text-center text-dark-400 font-semibold pb-[20px]">
           Create Account
         </h4>
         <form
@@ -92,7 +92,7 @@ const SignUpForm = () => {
           />
           </div>
           <div className="flex items-center border rounded-lg py-3 px-4 mt-[20px]">
-            <FcGoogle className="w-[34px] h-[34px]"/>
+            <FcGoogle className="w-[34px] h-[34px] cursor-pointer"/>
             <button className="w-full text-xl font-bold text-black text-center">Continue with Google</button>
           </div>
         </form>

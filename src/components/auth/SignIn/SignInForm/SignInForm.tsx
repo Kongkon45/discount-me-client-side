@@ -36,7 +36,7 @@ const SignInForm = () => {
             <label className="text-[20px] text-dark-500 font-normal" htmlFor="check">Remember me</label>
             </div>
             <div>
-                <Link className="text-[20px] text-dark-500 font-normal" href="/">Forget Password</Link>
+                <Link className="text-[20px] text-dark-500 font-normal" href="/forgot">Forget Password</Link>
             </div>
         </div>
         <input className="w-full bg-primary text-white text-[20px] font-bold py-3 rounded-full" type="submit" />
