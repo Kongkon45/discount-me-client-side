@@ -1,0 +1,6 @@
+.footer__bg_color{
+    background: var(--Primary-Black, #232323);
+}
+.category__color{
+    color: rgba(255, 255, 255, 0.80);
+}

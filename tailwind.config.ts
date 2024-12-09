@@ -37,7 +37,7 @@ export default {
           DEFAULT: "#F8FAFC",
           50: "#BBBBBB",
           100: "#F8FAFC",
-          // 200: "#758888",
+          200: "#758888",
         },
         
       },
