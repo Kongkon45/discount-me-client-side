@@ -1,52 +1,16 @@
-import React from "react";
-import topRestaurantsData from "../../../topRestaurants.json";
+import React from 'react';
+import topRestaurantsData from "../../topRestaurants.json";
 import Image from "next/image";
-import "./TopRestaurants.css";
 import { CiLocationOn } from "react-icons/ci";
-import Link from "next/link";
+import "./ExploreRestaurants.css";
 
-const TopRestaurants = () => {
-  return (
-    <div className="container">
-      <div className="flex items-center justify-between pb-[35px]">
-        <div>
-          <h5 className="text-4xl font-medium text-dark-50">
-            Explore <span className="text-primary">Top Restaurants</span>
-          </h5>
-          <p className="text-sm font-normal text-dark-200 pt-[4px]">
-            Check your city{" "}
-            <span className="font-medium">
-              {" "}
-              Near by <br /> Restaurant
-            </span>
-          </p>
-        </div>
-        <div>
-          <Link href={`/explore-estaurants`}>
-            <button className="flex items-center gap-1 text-base font-normal text-dark-100">
-              See All{" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 21 21"
-                fill="none"
-              >
-                <path
-                  d="M7.875 4.375L14 10.5L7.875 16.625"
-                  stroke="#232323"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-          </Link>
-        </div>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[54px]">
-        {topRestaurantsData?.slice(0,3)?.map((data) => {
+const ExploreRestaurants = () => {
+    return (
+        <div className="container">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-[54px]">
+        {topRestaurantsData?.map((data) => {
           return (
-            <div key={data?.id} className="restaurants_cart_bg p-[16px]">
+            <div key={data?.id} className="explore_restaurants_cart_bg p-[16px]">
               <Image
                 src={data?.image}
                 alt={data?.name}
@@ -87,8 +51,8 @@ const TopRestaurants = () => {
           );
         })}
       </div>
-    </div>
-  );
+        </div>
+    );
 };
 
-export default TopRestaurants;
+export default ExploreRestaurants;

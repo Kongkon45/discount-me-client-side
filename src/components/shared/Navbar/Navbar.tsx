@@ -61,7 +61,10 @@ const Navbar = () => {
             <div className="hidden md:block">
               <div className="flex items-center gap-[20px]">
                 <LuShoppingCart className="w-[26px] h-[26px]"/>
+                <Link href="/signin">
                 <LuUser className="w-[30px] h-[30px]"/>
+                </Link>
+                
               </div>
             </div>
 
