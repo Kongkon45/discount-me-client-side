@@ -3,105 +3,105 @@
         "id" : 1,
         "img" : "/assets/homePage/itemProducts/long_t_shirt.png",
         "title" : "Long Sleeve T-Shirt",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 2,
         "img" : "/assets/homePage/itemProducts/long_t_shirt.png",
         "title" : "Long Sleeve T-Shirt",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 3,
         "img" : "/assets/homePage/itemProducts/crazy_tacko.png",
         "title" : "Crazy tacko",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 4,
         "img" : "/assets/homePage/itemProducts/long_t_shirt.png",
         "title" : "Long Sleeve T-Shirt",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 5,
         "img" : "/assets/homePage/itemProducts/long_t_shirt.png",
         "title" : "Long Sleeve T-Shirt",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 6,
         "img" : "/assets/homePage/itemProducts/crazy_tacko.png",
         "title" : "Crazy tacko",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 7,
         "img" : "/assets/homePage/itemProducts/long_t_shirt.png",
         "title" : "Long Sleeve T-Shirt",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 8,
         "img" : "/assets/homePage/itemProducts/long_t_shirt.png",
         "title" : "Long Sleeve T-Shirt",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 9,
         "img" : "/assets/homePage/itemProducts/crazy_tacko.png",
         "title" : "Crazy tacko",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 10,
         "img" : "/assets/homePage/itemProducts/long_t_shirt.png",
         "title" : "Long Sleeve T-Shirt",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 11,
         "img" : "/assets/homePage/itemProducts/long_t_shirt.png",
         "title" : "Long Sleeve T-Shirt",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 12,
         "img" : "/assets/homePage/itemProducts/crazy_tacko.png",
         "title" : "Crazy tacko",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 13,
         "img" : "/assets/homePage/itemProducts/long_t_shirt.png",
         "title" : "Long Sleeve T-Shirt",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 14,
         "img" : "/assets/homePage/itemProducts/long_t_shirt.png",
         "title" : "Long Sleeve T-Shirt",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     },
     {
         "id" : 15,
         "img" : "/assets/homePage/itemProducts/crazy_tacko.png",
         "title" : "Crazy tacko",
-        "price" : "$45.5",
+        "price" : "45.5",
         "desc" : "Delicouse tackos, appetizing..."
     }
     

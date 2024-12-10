@@ -6,8 +6,11 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { LuShoppingCart } from "react-icons/lu";
 import { LuUser } from "react-icons/lu";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const carts = useSelector((state:any)=> state.carts.carts)
+  console.log(carts)
   const [isOpen, setIsOpen] = useState(false);
   const [hoverCategory, setHoverCategory] = useState(true);
 
@@ -60,7 +63,10 @@ const Navbar = () => {
             {/* Right side: Button */}
             <div className="hidden md:block">
               <div className="flex items-center gap-[20px]">
-                <LuShoppingCart className="w-[26px] h-[26px]"/>
+                <Link href="/cart" className="flex gap-1 ">
+                <LuShoppingCart className="w-[26px] h-[26px]"/> <sup className="text-md font-bold mt-2">{ carts.length}</sup>
+                </Link>
+                
                 <Link href="/signin">
                 <LuUser className="w-[30px] h-[30px]"/>
                 </Link>

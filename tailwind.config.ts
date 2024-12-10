@@ -34,6 +34,7 @@ export default {
           300: "#1D242D",
           400: "#1A1A1A",
           500: "#666666",
+          600: " #1A1A1A",
         },
         gray: {
           DEFAULT: "#F8FAFC",
