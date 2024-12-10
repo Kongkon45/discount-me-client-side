@@ -4,6 +4,7 @@ import Image from "next/image";
 import { PiMapPinLineDuotone } from "react-icons/pi";
 import ItemCategory from "../ItemCategory/ItemCategory";
 import ProductCategory from "../ProductCategory/ProductCategory";
+import Link from "next/link";
 
 interface ViewRestaurantProps {
   id: string | number;
@@ -84,7 +85,9 @@ const ViewRestaurant: React.FC<ViewRestaurantProps> = ({ id }) => {
         </p>
         <div className="flex items-center justify-between py-12">
             <h4 className="text-3xl font-bold text-dark-300">Items🔥</h4>
+            <Link href="/explore-restaurants/view-items">
             <button className="text-2xl font-normal text-secondary pt-[6px] pb-[8px] px-[16px] seeAll_button">See all</button>
+            </Link>
         </div>
         {/* items category  */}
         <ItemCategory/>
