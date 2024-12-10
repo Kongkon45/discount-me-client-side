@@ -47,16 +47,22 @@ const Navbar = () => {
                 All Category { hoverCategory ? <IoIosArrowDown /> : <IoIosArrowUp /> } 
               </Link>
               <Link
-                href="#"
+                href="/coupon"
                 className="text-base 2xl:text-lg font-normal text-dark-300 hover:text-primary"
               >
                 Coupon
               </Link>
               <Link
-                href="#"
+                href="/support"
                 className="text-base 2xl:text-lg font-normal text-dark-300 hover:text-primary"
               >
                 Support
+              </Link>
+              <Link
+                href="/dashboard"
+                className="text-base 2xl:text-lg font-normal text-dark-300 hover:text-primary"
+              >
+                Dashboard
               </Link>
             </div>
 
@@ -112,6 +118,12 @@ const Navbar = () => {
                 className="block text-base 2xl:text-lg font-normal text-dark-300 hover:text-primary py-2"
               >
                 Support
+              </Link>
+              <Link
+                href="#"
+                className="block text-base 2xl:text-lg font-normal text-dark-300 hover:text-primary py-2"
+              >
+                Dashboard
               </Link>
             </div>
           )}
