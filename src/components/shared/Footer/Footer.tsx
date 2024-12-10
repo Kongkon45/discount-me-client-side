@@ -52,12 +52,20 @@ const Footer = () => {
               Quick Link
             </h6>
             <ul className="pt-[20px] md:pt-[25px] lg:pt-[30px] category__color text-center md:text-left">
+              
+
+              <Link href="/privacy-policy">
               <li className="text-sm md:text-base font-normal">
                 Privacy Policy
               </li>
+              </Link>
+
+              <Link href="/terms-of-use">
               <li className="text-sm md:text-base font-normal py-[12px] md:py-[15px]">
                 Terms Of Use
               </li>
+              </Link>
+              
               <li className="text-sm md:text-base font-normal">FAQ</li>
               <li className="text-sm md:text-base font-normal">Contact</li>
               <Link href="/about"><li className="text-sm md:text-base font-normal">About</li></Link>
