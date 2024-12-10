@@ -60,6 +60,8 @@ const Footer = () => {
               </li>
               <li className="text-sm md:text-base font-normal">FAQ</li>
               <li className="text-sm md:text-base font-normal">Contact</li>
+              <Link href="/about"><li className="text-sm md:text-base font-normal">About</li></Link>
+              
             </ul>
           </div>
           <div className="md:col-span-2">
