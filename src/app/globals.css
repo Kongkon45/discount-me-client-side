@@ -79,6 +79,16 @@ body {
   }
 }
 
+.seeAll_button{
+  border-radius: 72.732px;
+  background: var(--foundation-green-light-hover, #D9F3E3);
+}
+.items_category_cart_bg{
+  border-radius: 14.214px;
+  background: var(--White, #FDFDFD);
+  box-shadow: 0px 3.553px 14.214px 0px rgba(0, 0, 0, 0.08);
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

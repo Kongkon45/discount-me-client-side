@@ -1,5 +1,5 @@
+import ExploreRestaurants from '@/components/ExploreRestaurants/ExploreRestaurants';
 import React from 'react';
-import ExploreRestaurants from '../../components/ExploreRestaurants/ExploreRestaurants';
 
 const page = () => {
     return (

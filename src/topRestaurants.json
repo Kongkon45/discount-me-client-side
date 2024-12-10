@@ -4,84 +4,96 @@
       "name": "Trattoria dall'Oste",
       "image": "/assets/homePage/restaurants/restaurant1.png",
       "location": "Via Luigi Alamanni, 3, 50123 Firenze",
-      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional."
+      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
+      "thumbnail_image": "/assets/homePage/restaurants/thumbnail_restaurant_banner.png"
     },
     {
       "id": 2,
       "name": "Trattoria dall'Oste",
       "image": "/assets/homePage/restaurants/restaurant2.png",
       "location": "Via Luigi Alamanni, 3, 50123 Firenze",
-      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional."
+      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
+      "thumbnail_image": "/assets/homePage/restaurants/thumbnail_restaurant_banner.png"
     },
     {
       "id": 3,
       "name": "Trattoria dall'Oste",
       "image": "/assets/homePage/restaurants/restaurant3.png",
       "location": "Via Luigi Alamanni, 3, 50123 Firenze",
-      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional."
+      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
+      "thumbnail_image": "/assets/homePage/restaurants/thumbnail_restaurant_banner.png"
     },
     {
       "id": 4,
       "name": "Trattoria dall'Oste",
       "image": "/assets/homePage/restaurants/restaurant1.png",
       "location": "Via Luigi Alamanni, 3, 50123 Firenze",
-      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional."
+      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
+      "thumbnail_image": "/assets/homePage/restaurants/thumbnail_restaurant_banner.png"
     },
     {
       "id": 5,
       "name": "Trattoria dall'Oste",
       "image": "/assets/homePage/restaurants/restaurant2.png",
       "location": "Via Luigi Alamanni, 3, 50123 Firenze",
-      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional."
+      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
+      "thumbnail_image": "/assets/homePage/restaurants/thumbnail_restaurant_banner.png"
     },
     {
       "id": 6,
       "name": "Trattoria dall'Oste",
       "image": "/assets/homePage/restaurants/restaurant3.png",
       "location": "Via Luigi Alamanni, 3, 50123 Firenze",
-      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional."
+      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
+      "thumbnail_image": "/assets/homePage/restaurants/thumbnail_restaurant_banner.png"
     },
     {
       "id": 7,
       "name": "Trattoria dall'Oste",
       "image": "/assets/homePage/restaurants/restaurant1.png",
       "location": "Via Luigi Alamanni, 3, 50123 Firenze",
-      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional."
+      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
+      "thumbnail_image": "/assets/homePage/restaurants/thumbnail_restaurant_banner.png"
     },
     {
       "id": 8,
       "name": "Trattoria dall'Oste",
       "image": "/assets/homePage/restaurants/restaurant2.png",
       "location": "Via Luigi Alamanni, 3, 50123 Firenze",
-      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional."
+      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
+      "thumbnail_image": "/assets/homePage/restaurants/thumbnail_restaurant_banner.png"
     },
     {
       "id": 9,
       "name": "Trattoria dall'Oste",
       "image": "/assets/homePage/restaurants/restaurant3.png",
       "location": "Via Luigi Alamanni, 3, 50123 Firenze",
-      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional."
+      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
+      "thumbnail_image": "/assets/homePage/restaurants/thumbnail_restaurant_banner.png"
     },
     {
       "id": 10,
       "name": "Trattoria dall'Oste",
       "image": "/assets/homePage/restaurants/restaurant1.png",
       "location": "Via Luigi Alamanni, 3, 50123 Firenze",
-      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional."
+      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
+      "thumbnail_image": "/assets/homePage/restaurants/thumbnail_restaurant_banner.png"
     },
     {
       "id": 11,
       "name": "Trattoria dall'Oste",
       "image": "/assets/homePage/restaurants/restaurant2.png",
       "location": "Via Luigi Alamanni, 3, 50123 Firenze",
-      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional."
+      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
+      "thumbnail_image": "/assets/homePage/restaurants/thumbnail_restaurant_banner.png"
     },
     {
       "id": 12,
       "name": "Trattoria dall'Oste",
       "image": "/assets/homePage/restaurants/restaurant3.png",
       "location": "Via Luigi Alamanni, 3, 50123 Firenze",
-      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional."
+      "desc": "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
+      "thumbnail_image": "/assets/homePage/restaurants/thumbnail_restaurant_banner.png"
     }
   ]
   

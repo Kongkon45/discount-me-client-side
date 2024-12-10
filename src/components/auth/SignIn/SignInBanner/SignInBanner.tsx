@@ -9,7 +9,6 @@ const SignInBanner = () => {
                 }}
                 className="h-[170px] w-auto bg-cover bg-no-repeat bg-center"
             >
-                ddd
             </div>
         </div>
     );

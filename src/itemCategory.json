@@ -1,0 +1,62 @@
+[
+    {
+        "id" : 1,
+        "img" : "/assets/homePage/items/milk.png",
+        "category" : "Milk"
+    },
+    {
+        "id" : 2,
+        "img" : "/assets/homePage/items/milk.png",
+        "category" : "Milk"
+    },
+    {
+        "id" : 3,
+        "img" : "/assets/homePage/items/milk.png",
+        "category" : "Milk"
+    },
+    {
+        "id" : 4,
+        "img" : "/assets/homePage/items/t_shirt.png",
+        "category" : "T Shirt"
+    },
+    {
+        "id" : 5,
+        "img" : "/assets/homePage/items/dessert.png",
+        "category" : "Dessert"
+    },
+    {
+        "id" : 6,
+        "img" : "/assets/homePage/items/toy.png",
+        "category" : "Toy"
+    },
+    {
+        "id" : 7,
+        "img" : "/assets/homePage/items/book.png",
+        "category" : "Book"
+    },
+    {
+        "id" : 8,
+        "img" : "/assets/homePage/items/dessert.png",
+        "category" : "Dessert"
+    },
+    {
+        "id" : 9,
+        "img" : "/assets/homePage/items/noodles.png",
+        "category" : "Noodles"
+    },
+    {
+        "id" : 10,
+        "img" : "/assets/homePage/items/milk.png",
+        "category" : "Milk"
+    },
+    {
+        "id" : 11,
+        "img" : "/assets/homePage/items/noodles.png",
+        "category" : "Noodles"
+    },
+    {
+        "id" : 12,
+        "img" : "/assets/homePage/items/rice.png",
+        "category" : "Rice"
+    }
+]
