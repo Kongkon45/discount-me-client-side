@@ -23,6 +23,8 @@ export default {
         primary: {
           DEFAULT: "#FF7D29",
           50: "#FDEEE9",
+          100: "#EA5326",
+          
         },
         secondary: {
           DEFAULT: "#00B047",
@@ -48,6 +50,7 @@ export default {
           400: "#DFE1E3",
           500: "#F2F2F2",
           600: "#999999",
+          700: "#333333",
         },
         
       },
