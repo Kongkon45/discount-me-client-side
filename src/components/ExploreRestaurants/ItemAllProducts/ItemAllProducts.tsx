@@ -17,7 +17,6 @@ const ItemAllProducts = () => {
         {itemsAllProductData?.map((data: any) => {
           return (
             <div key={data?.id} className="items_category_cart_bg py-2">
-              <Link href={`/explore-restaurants/view-items/${data?.id}`}>
               <div className="relative">
                 <Image
                   src={data?.img}
@@ -33,13 +32,14 @@ const ItemAllProducts = () => {
                   />
                 </span>
               </div>
-              <div className="flex items-center justify-between px-[20px] py-[12px]">
-                <div>
-                  <h5 className="text-2xl font-semibold">{data?.title}</h5>
-                  <p className="text-lg font-normal">{data?.desc}</p>
+              <Link href={`/explore-restaurants/view-items/${data?.id}`}>
+                <div className="flex items-center justify-between px-[20px] py-[12px]">
+                  <div>
+                    <h5 className="text-2xl font-semibold">{data?.title}</h5>
+                    <p className="text-lg font-normal">{data?.desc}</p>
+                  </div>
+                  <p className="text-2xl font-semibold">{data?.price}</p>
                 </div>
-                <p className="text-2xl font-semibold">{data?.price}</p>
-              </div>
               </Link>
             </div>
           );

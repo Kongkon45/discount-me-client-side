@@ -10,13 +10,12 @@ interface IFormInput {
   lastName: string;
   companyName: string;
   streetAddress: string;
-  email: string;
-  phoneNumber: string;
   country: string;
   states: string;
+  email: string;
+  phoneNumber: string;
   address: string;
-  zipCode: number;
-  checkbox: boolean;
+  radio: boolean;
   subTotal: number;
   productId: string;
 }
@@ -97,11 +96,7 @@ const CheckoutPage = () => {
     0
   );
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-  } = useForm<IFormInput>();
+  const { register, handleSubmit, reset } = useForm<IFormInput>();
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
     data.subTotal = totalPrice;
     // data.productId = productItem.map((id:any)=>id._id === productItem._id)
@@ -119,7 +114,7 @@ const CheckoutPage = () => {
     //     window.location.replace(result.url);
     //     console.log(result);
     //   });
-    // reset();
+    reset();
   };
   return (
     <div>
@@ -133,9 +128,9 @@ const CheckoutPage = () => {
         <div className="lg:flex w-full mt-6 lg:px-0 px-10">
           <div className="lg:w-2/4 w-full mx-auto">
             <h2 className="text-4xl font-normal text-dark-600 pt-10">
-            Billing Information
+              Billing Information
             </h2>
-            <div className="border-2 rounded-lg p-6 my-6">
+            <div className="border rounded-lg p-6 my-6 profile__bg">
               <div className="flex gap-10 items-center">
                 <div className="w-1/3">
                   <label className="text-sm font-normal" htmlFor="firstName">
@@ -143,7 +138,7 @@ const CheckoutPage = () => {
                   </label>{" "}
                   <br />
                   <input
-                    className="w-full border-2 hover:border-primary rounded-md py-1 px-2 text-sm"
+                    className="w-full border hover:border-primary rounded-md py-1 px-2 text-sm mt-1"
                     placeholder="Enter your name..."
                     type="text"
                     {...register("firstName")}
@@ -155,7 +150,7 @@ const CheckoutPage = () => {
                   </label>{" "}
                   <br />
                   <input
-                    className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2 "
+                    className="w-full text-sm border hover:border-primary rounded-md py-1 px-2  mt-1"
                     placeholder="Enter your lastName..."
                     type="text"
                     {...register("lastName")}
@@ -163,11 +158,11 @@ const CheckoutPage = () => {
                 </div>
                 <div className="w-1/3">
                   <label className="text-sm font-normal" htmlFor="companyName">
-                  Company Name (optional)
+                    Company Name (optional)
                   </label>{" "}
                   <br />
                   <input
-                    className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2 "
+                    className="w-full text-sm border hover:border-primary rounded-md py-1 px-2  mt-1"
                     placeholder="Enter your company..."
                     type="text"
                     {...register("companyName")}
@@ -176,11 +171,11 @@ const CheckoutPage = () => {
               </div>
               <div className="my-4">
                 <label className="text-sm font-normal" htmlFor="streetAddress">
-                Street Address
+                  Street Address
                 </label>{" "}
                 <br />
                 <input
-                  className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2 "
+                  className="w-full text-sm border hover:border-primary rounded-md py-1 px-2  mt-1"
                   placeholder="Enter your street Address..."
                   type="email"
                   {...register("streetAddress")}
@@ -190,11 +185,11 @@ const CheckoutPage = () => {
               <div className="flex gap-10 my-4">
                 <div className="w-1/2">
                   <label className="text-sm font-normal" htmlFor="country">
-                  Country / Region
+                    Country / Region
                   </label>{" "}
                   <br />
                   <select
-                    className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2"
+                    className="w-full text-sm border hover:border-primary rounded-md py-1 px-2 mt-1"
                     {...register("country")}
                   >
                     <option value="">Select Town/City</option>
@@ -207,11 +202,11 @@ const CheckoutPage = () => {
                 </div>
                 <div className="w-1/2">
                   <label className="text-sm font-normal" htmlFor="states">
-                  States
+                    States
                   </label>{" "}
                   <br />
                   <select
-                    className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2"
+                    className="w-full text-sm border hover:border-primary rounded-md py-1 px-2 mt-1"
                     {...register("states")}
                   >
                     <option value="">Select states</option>
@@ -224,41 +219,41 @@ const CheckoutPage = () => {
                 </div>
               </div>
               <div className="flex gap-10 my-4">
-              <div className="w-1/2 my-4">
-                <label className="text-sm font-normal" htmlFor="email">
-                  Email Address :{" "}
-                </label>{" "}
-                <br />
-                <input
-                  className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2 "
-                  placeholder="Enter your email..."
-                  type="email"
-                  {...register("email")}
-                />
-              </div>
-              <div className="w-1/2 my-4">
-                <label className="text-sm font-normal" htmlFor="phoneNumber">
-                  Phone Number :{" "}
-                </label>{" "}
-                <br />
-                <input
-                  className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2 "
-                  placeholder="Enter your phone number..."
-                  type="string"
-                  {...register("phoneNumber")}
-                />
-              </div>
+                <div className="w-1/2 my-4">
+                  <label className="text-sm font-normal" htmlFor="email">
+                    Email Address :{" "}
+                  </label>{" "}
+                  <br />
+                  <input
+                    className="w-full text-sm border hover:border-primary rounded-md py-1 px-2  mt-1"
+                    placeholder="Enter your email..."
+                    type="email"
+                    {...register("email")}
+                  />
+                </div>
+                <div className="w-1/2 my-4">
+                  <label className="text-sm font-normal" htmlFor="phoneNumber">
+                    Phone Number :{" "}
+                  </label>{" "}
+                  <br />
+                  <input
+                    className="w-full text-sm border hover:border-primary rounded-md py-1 px-2  mt-1"
+                    placeholder="Enter your phone number..."
+                    type="string"
+                    {...register("phoneNumber")}
+                  />
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="lg:w-1/4 w-full mx-auto">
+          <div className="lg:w-1/4 w-full mx-auto ">
             <h2 className="w-full lg:text-xl text-sm rounded-lg font-semibold text-center bg-[#e9e4e4] text-black pl-10 py-1 ">
               Your Order
             </h2>
-            <div className="mt-6 border-2 rounded-lg p-4">
-              <h2 className="text-left lg:text-2xl text-base font-bold my-3">
-              Order Summery
+            <div className="mt-6 border rounded-lg p-4 profile__bg">
+              <h2 className="text-left lg:text-2xl text-base font-bold mb-3">
+                Order Summery
               </h2>
               <ul>
                 {productItem?.length === 0 ? (
@@ -277,17 +272,17 @@ const CheckoutPage = () => {
                           src={`${product?.img}`}
                           alt={`${product?.title}`}
                         />
-                        <h5 className="lg:text-sm text-sm font-semibold">
+                        <h5 className="lg:text-sm text-xs font-semibold">
                           {product?.title}
                         </h5>
-                        <p className="lg:text-sm text-sm font-semibold">
-                          {product?.price}
+                        <p className="lg:text-sm text-xs font-semibold">
+                          ${product?.price}
                         </p>
-                        <p className="lg:text-sm text-sm font-semibold">
+                        <p className="lg:text-sm text-xs font-semibold">
                           X{product?.quantity}
                         </p>
-                        <p className="lg:text-sm text-sm font-normal">
-                          {product?.quantity * product?.price}
+                        <p className="lg:text-sm text-xs font-normal">
+                          ${product?.quantity * product?.price}
                         </p>
                       </li>
                     );
@@ -296,30 +291,40 @@ const CheckoutPage = () => {
               </ul>
               <div className="mt-6 mb-2">
                 <hr className="border my-2" />
-                {/* <h5 className="text-sm font-normal flex justify-between items-center">
-                  Subtotal <span>${totalPrice}</span>
-                </h5>
-                <hr className="border my-2" /> */}
                 <h5 className="text-sm font-normal flex justify-between items-center">
                   Shipping <span>Free</span>
                 </h5>
                 <hr className="border my-2" />
                 <h5 className="text-sm font-normal flex justify-between items-center">
-                  Total <span>${totalPrice}</span>
+                  Total <strong>${totalPrice}</strong>
                 </h5>
-                <hr className="border my-2" />
-                <div className="flex items-center gap-2 mt-6">
-                  <input
-                    className="lg:w-4 w-3 lg:h-4 h-3"
-                    type="checkbox"
-                    {...register("checkbox")}
-                  />
-                  <label className="lg:text-sm text-sm " htmlFor="checkbox">
-                    Agree to our Terms & Conditons
-                  </label>
+                <div>
+                  <h5 className="text-lg md:text-[22px] font-medium text-dark-400 pt-2">
+                    Payment Method
+                  </h5>
                 </div>
+                <div className="flex items-center gap-2 mt-4">
+                <input
+                  className="lg:w-4 w-3 lg:h-4 h-3"
+                  type="radio"
+                  {...register("radio")}
+                />
+                <label className="lg:text-sm text-sm" htmlFor="radio">
+                Cash on Delivery
+                </label>
+              </div>
+                <div className="flex items-center gap-2 mt-2">
+                <input
+                  className="lg:w-4 w-3 lg:h-4 h-3"
+                  type="radio"
+                  {...register("radio")}
+                />
+                <label className="lg:text-sm text-sm" htmlFor="radio">
+                Paypal
+                </label>
+              </div>
                 <button
-                  className="w-full text-sm mt-6 bg-primary text-white py-2 px-4 rounded-lg hover:border-2 hover:bg-white hover:text-primary hover:border-primary transition-all duration-200 ease-in-out "
+                  className="w-full text-sm mt-3 bg-primary text-white py-2 px-4 rounded-lg hover:border hover:bg-white hover:text-primary hover:border-primary transition-all duration-200 ease-in-out "
                   type="submit"
                 >
                   Place Order
