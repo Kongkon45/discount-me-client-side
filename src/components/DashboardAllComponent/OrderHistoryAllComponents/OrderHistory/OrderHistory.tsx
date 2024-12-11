@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import React from "react";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
@@ -132,9 +133,11 @@ const OrderHistory = () => {
                 </td>
 
                 <td className="border border-gray-200 p-2 text-center">
+                  <Link href={`/dashboard/order-history/order-details`}>
                   <button className="text-primary-100 cursor-pointer">
                     {order?.view}
                   </button>
+                  </Link>
                 </td>
               </tr>
             ))}

@@ -24,6 +24,7 @@ export default {
           DEFAULT: "#FF7D29",
           50: "#FDEEE9",
           100: "#EA5326",
+          200: "#EB2926",
           
         },
         secondary: {
@@ -40,6 +41,7 @@ export default {
           600: "#1A1A1A",
           700: "#727272",
           800: "#808080",
+          900: "#4D4D4D",
         },
         gray: {
           DEFAULT: "#F8FAFC",
