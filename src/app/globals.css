@@ -91,6 +91,11 @@ body {
 
 .navigation_cart_bg{
   border-radius: 9.212px;
-border: 1.152px solid var(--Gray-Scale-Gray-100, #E6E6E6);
-background: var(--Gray-Scale-White, #FFF);
+  border: 1.152px solid var(--Gray-Scale-Gray-100, #E6E6E6);
+  background: var(--Gray-Scale-White, #FFF);
+}
+.profile__bg{
+  border-radius: 9.212px;
+  border: 1.152px solid var(--Gray-Scale-Gray-100, #E6E6E6);
+  background: var(--Gray-Scale-White, #FFF);
 }
