@@ -48,10 +48,12 @@ const CartsPage = () => {
             <div className='lg:w-4/12 w-full border-2 rounded-lg shadow-lg p-4 my-3'>
                 <h3 className='text-xl font-bold my-4 text-left'>Cart Total</h3>
                 <h5 className='text-base font-bold flex justify-between items-center'>Subtotal: <span>${totalPrice}</span></h5>
+                <hr className='border my-2' />
                 <h5 className='text-base font-bold flex justify-between items-center'>Shipping: <span>Free</span></h5>
                 <hr className='border my-2' />
                 <h5 className='text-base font-bold flex justify-between items-center'>Total <span>${totalPrice}</span></h5>
-                <button className='w-full my-6 bg-primary text-white py-2 px-4 rounded-lg hover:border-2 hover:bg-white hover:text-primary hover:border-primary transition-all duration-200 ease-in-out text-base' type="submit"><Link href='/cart/checkout'>PROCESS TO CHECKOUT</Link></button>
+                <button className='w-full my-6 bg-primary text-white py-2 px-4 rounded-lg hover:border-2 hover:bg-white hover:text-primary hover:border-primary transition-all duration-200 ease-in-out text-base' type="submit"><Link href='/cart/checkout'>
+                Proceed to checkout</Link></button>
             </div>
         </div>
         </div>

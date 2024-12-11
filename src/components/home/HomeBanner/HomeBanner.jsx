@@ -21,7 +21,7 @@ const HomeBanner = () => {
             stroke="#8ABA51"
             strokeWidth="2"
             strokeLinejoin="round"
-            stroke-dasharray="8 8"
+            strokeDasharray="8 8"
           />
         </svg>
       </div>

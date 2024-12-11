@@ -8,9 +8,12 @@ import { useSelector } from "react-redux";
 interface IFormInput {
   firstName: string;
   lastName: string;
+  companyName: string;
+  streetAddress: string;
   email: string;
   phoneNumber: string;
-  city: string;
+  country: string;
+  states: string;
   address: string;
   zipCode: number;
   checkbox: boolean;
@@ -98,7 +101,6 @@ const CheckoutPage = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
   } = useForm<IFormInput>();
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
     data.subTotal = totalPrice;
@@ -121,8 +123,8 @@ const CheckoutPage = () => {
   };
   return (
     <div>
-      <div className="flex justify-end mr-10 mt-4">
-        <button className="flex justify-center items-center gap-2 text-sm font-semibold hover:bg-[#fd3d57] hover:text-white border border-[#fd3d57] rounded-lg text-[#fd3d57] py-1 px-4 transition-all ease-in-out duration-700">
+      <div className="flex justify-end mr-10 mt-4 bg-gray-100">
+        <button className="flex justify-center items-center gap-2 text-sm font-semibold hover:bg-primary hover:text-white border border-primary rounded-lg text-primary py-1 px-4 transition-all ease-in-out duration-700">
           <Link href={`/cart`}>Back</Link>
           <FaAngleDoubleRight />
         </button>
@@ -130,130 +132,70 @@ const CheckoutPage = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="lg:flex w-full mt-6 lg:px-0 px-10">
           <div className="lg:w-2/4 w-full mx-auto">
-            <h2 className="text-4xl font-bold text-dark-600 pt-10">
+            <h2 className="text-4xl font-normal text-dark-600 pt-10">
             Billing Information
             </h2>
             <div className="border-2 rounded-lg p-6 my-6">
               <div className="flex gap-10 items-center">
                 <div className="w-1/3">
-                  <label className="text-md font-bold" htmlFor="firstName">
+                  <label className="text-sm font-normal" htmlFor="firstName">
                     First Name :{" "}
-                    <span className="text-md text-[#fd3d57]">*</span>
                   </label>{" "}
                   <br />
                   <input
-                    className="w-full border-2 hover:border-[#fd3d57] rounded-md py-1 px-2 text-sm"
+                    className="w-full border-2 hover:border-primary rounded-md py-1 px-2 text-sm"
                     placeholder="Enter your name..."
                     type="text"
-                    {...register("firstName", { required: true })}
+                    {...register("firstName")}
                   />
-                  {errors.firstName && (
-                    <span className="text-[#fd3d57] text-sm">
-                      This field is required
-                    </span>
-                  )}
                 </div>
                 <div className="w-1/3">
-                  <label className="text-md font-bold" htmlFor="lastName">
+                  <label className="text-sm font-normal" htmlFor="lastName">
                     Last Name :{" "}
-                    <span className="text-md text-[#fd3d57]">*</span>
                   </label>{" "}
                   <br />
                   <input
-                    className="w-full text-sm border-2 hover:border-[#fd3d57] rounded-md py-1 px-2 "
+                    className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2 "
                     placeholder="Enter your lastName..."
                     type="text"
-                    {...register("lastName", { required: true })}
+                    {...register("lastName")}
                   />
-                  {errors.lastName && (
-                    <span className="text-[#fd3d57] text-sm">
-                      This field is required
-                    </span>
-                  )}
                 </div>
                 <div className="w-1/3">
-                  <label className="text-md font-bold" htmlFor="lastName">
-                    Last Name :{" "}
-                    <span className="text-md text-[#fd3d57]">*</span>
+                  <label className="text-sm font-normal" htmlFor="companyName">
+                  Company Name (optional)
                   </label>{" "}
                   <br />
                   <input
-                    className="w-full text-sm border-2 hover:border-[#fd3d57] rounded-md py-1 px-2 "
-                    placeholder="Enter your lastName..."
+                    className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2 "
+                    placeholder="Enter your company..."
                     type="text"
-                    {...register("lastName", { required: true })}
+                    {...register("companyName")}
                   />
-                  {errors.lastName && (
-                    <span className="text-[#fd3d57] text-sm">
-                      This field is required
-                    </span>
-                  )}
                 </div>
               </div>
               <div className="my-4">
-                <label className="text-md font-bold" htmlFor="email">
-                  Email Address :{" "}
-                  <span className="text-md text-[#fd3d57]">*</span>
+                <label className="text-sm font-normal" htmlFor="streetAddress">
+                Street Address
                 </label>{" "}
                 <br />
                 <input
-                  className="w-full text-sm border-2 hover:border-[#fd3d57] rounded-md py-1 px-2 "
-                  placeholder="Enter your email..."
+                  className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2 "
+                  placeholder="Enter your street Address..."
                   type="email"
-                  {...register("email", { required: true })}
+                  {...register("streetAddress")}
                 />
-                {errors.email && (
-                  <span className="text-[#fd3d57] text-sm">
-                    This field is required
-                  </span>
-                )}
               </div>
-              <div className="my-4">
-                <label className="text-md font-bold" htmlFor="phoneNumber">
-                  Phone Number :{" "}
-                  <span className="text-md text-[#fd3d57]">*</span>
-                </label>{" "}
-                <br />
-                <input
-                  className="w-full text-sm border-2 hover:border-[#fd3d57] rounded-md py-1 px-2 "
-                  placeholder="Enter your phone number..."
-                  type="string"
-                  {...register("phoneNumber", { required: true })}
-                />
-                {errors.phoneNumber && (
-                  <span className="text-[#fd3d57] text-sm">
-                    This field is required
-                  </span>
-                )}
-              </div>
-              <div className="my-4">
-                <label className="text-md font-bold" htmlFor="address">
-                  Street Address :{" "}
-                  <span className="text-md text-[#fd3d57]">*</span>
-                </label>{" "}
-                <br />
-                <input
-                  className="w-full text-sm border-2 hover:border-[#fd3d57] rounded-md py-1 px-2 "
-                  placeholder="Enter your Address..."
-                  type="text"
-                  {...register("address", { required: true })}
-                />
-                {errors.address && (
-                  <span className="text-[#fd3d57] text-sm">
-                    This field is required
-                  </span>
-                )}
-              </div>
+
               <div className="flex gap-10 my-4">
                 <div className="w-1/2">
-                  <label className="text-md font-bold" htmlFor="town/city">
-                    Town/City :{" "}
-                    <span className="text-md text-[#fd3d57]">*</span>
+                  <label className="text-sm font-normal" htmlFor="country">
+                  Country / Region
                   </label>{" "}
                   <br />
                   <select
-                    className="w-full text-sm border-2 hover:border-[#fd3d57] rounded-md py-1 px-2"
-                    {...register("city", { required: true })}
+                    className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2"
+                    {...register("country")}
                   >
                     <option value="">Select Town/City</option>
                     {districts.map((district, index) => (
@@ -262,45 +204,65 @@ const CheckoutPage = () => {
                       </option>
                     ))}
                   </select>
-                  {errors.city && (
-                    <span className="text-[#fd3d57] text-sm">
-                      This field is required
-                    </span>
-                  )}
                 </div>
                 <div className="w-1/2">
-                  <label className="text-md font-bold" htmlFor="zipCode">
-                    Zip Code : <span className="text-md text-[#fd3d57]">*</span>
+                  <label className="text-sm font-normal" htmlFor="states">
+                  States
                   </label>{" "}
                   <br />
-                  <input
-                    className="w-full text-sm border-2 hover:border-[#fd3d57] rounded-md py-1 px-2 "
-                    placeholder="Enter zip code..."
-                    type="text"
-                    {...register("zipCode", { required: true })}
-                  />
-                  {errors.zipCode && (
-                    <span className="text-[#fd3d57] text-sm">
-                      This field is required
-                    </span>
-                  )}
+                  <select
+                    className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2"
+                    {...register("states")}
+                  >
+                    <option value="">Select states</option>
+                    {districts.map((district, index) => (
+                      <option key={index} value={district}>
+                        {district}
+                      </option>
+                    ))}
+                  </select>
                 </div>
+              </div>
+              <div className="flex gap-10 my-4">
+              <div className="w-1/2 my-4">
+                <label className="text-sm font-normal" htmlFor="email">
+                  Email Address :{" "}
+                </label>{" "}
+                <br />
+                <input
+                  className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2 "
+                  placeholder="Enter your email..."
+                  type="email"
+                  {...register("email")}
+                />
+              </div>
+              <div className="w-1/2 my-4">
+                <label className="text-sm font-normal" htmlFor="phoneNumber">
+                  Phone Number :{" "}
+                </label>{" "}
+                <br />
+                <input
+                  className="w-full text-sm border-2 hover:border-primary rounded-md py-1 px-2 "
+                  placeholder="Enter your phone number..."
+                  type="string"
+                  {...register("phoneNumber")}
+                />
+              </div>
               </div>
             </div>
           </div>
 
           <div className="lg:w-1/4 w-full mx-auto">
-            <h2 className="w-full lg:text-xl text-md rounded-lg font-semibold text-center bg-[#e9e4e4] text-black pl-10 py-1 ">
+            <h2 className="w-full lg:text-xl text-sm rounded-lg font-semibold text-center bg-[#e9e4e4] text-black pl-10 py-1 ">
               Your Order
             </h2>
             <div className="mt-6 border-2 rounded-lg p-4">
-              <h2 className="text-center lg:text-xl text-md font-bold my-3">
-                Products
+              <h2 className="text-left lg:text-2xl text-base font-bold my-3">
+              Order Summery
               </h2>
-              <hr className="border mb-4" />
               <ul>
                 {productItem?.length === 0 ? (
-                  <li className="lg:text-2xl text-xl font-bold text-center">
+                  <li className="lg:text-2xl text-xl font-normal text-center">
                     Cart Not Found
                   </li>
                 ) : (
@@ -315,16 +277,16 @@ const CheckoutPage = () => {
                           src={`${product?.img}`}
                           alt={`${product?.title}`}
                         />
-                        <h5 className="lg:text-md text-sm font-semibold">
+                        <h5 className="lg:text-sm text-sm font-semibold">
                           {product?.title}
                         </h5>
-                        <p className="lg:text-md text-sm font-semibold">
+                        <p className="lg:text-sm text-sm font-semibold">
                           {product?.price}
                         </p>
-                        <p className="lg:text-md text-sm font-semibold">
+                        <p className="lg:text-sm text-sm font-semibold">
                           X{product?.quantity}
                         </p>
-                        <p className="lg:text-md text-sm font-bold">
+                        <p className="lg:text-sm text-sm font-normal">
                           {product?.quantity * product?.price}
                         </p>
                       </li>
@@ -334,15 +296,15 @@ const CheckoutPage = () => {
               </ul>
               <div className="mt-6 mb-2">
                 <hr className="border my-2" />
-                <h5 className="text-md font-bold flex justify-between items-center">
+                {/* <h5 className="text-sm font-normal flex justify-between items-center">
                   Subtotal <span>${totalPrice}</span>
                 </h5>
-                <hr className="border my-2" />
-                <h5 className="text-md font-bold flex justify-between items-center">
+                <hr className="border my-2" /> */}
+                <h5 className="text-sm font-normal flex justify-between items-center">
                   Shipping <span>Free</span>
                 </h5>
                 <hr className="border my-2" />
-                <h5 className="text-md font-bold flex justify-between items-center">
+                <h5 className="text-sm font-normal flex justify-between items-center">
                   Total <span>${totalPrice}</span>
                 </h5>
                 <hr className="border my-2" />
@@ -350,22 +312,17 @@ const CheckoutPage = () => {
                   <input
                     className="lg:w-4 w-3 lg:h-4 h-3"
                     type="checkbox"
-                    {...register("checkbox", { required: true })}
+                    {...register("checkbox")}
                   />
-                  <label className="lg:text-md text-sm " htmlFor="checkbox">
+                  <label className="lg:text-sm text-sm " htmlFor="checkbox">
                     Agree to our Terms & Conditons
                   </label>
                 </div>
-                {errors.checkbox && (
-                  <span className="text-[#fd3d57] text-sm">
-                    This field is required
-                  </span>
-                )}
                 <button
-                  className="w-full text-md mt-6 bg-[#fd3d57] text-white py-2 px-4 rounded-lg hover:border-2 hover:bg-white hover:text-[#fd3d57] hover:border-[#fd3d57] transition-all duration-200 ease-in-out "
+                  className="w-full text-sm mt-6 bg-primary text-white py-2 px-4 rounded-lg hover:border-2 hover:bg-white hover:text-primary hover:border-primary transition-all duration-200 ease-in-out "
                   type="submit"
                 >
-                  PLACE ORDER
+                  Place Order
                 </button>
               </div>
             </div>
