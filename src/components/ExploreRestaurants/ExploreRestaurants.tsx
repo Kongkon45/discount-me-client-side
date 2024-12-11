@@ -1,17 +1,45 @@
-import React from 'react';
+import React from "react";
 import topRestaurantsData from "../../topRestaurants.json";
 import Image from "next/image";
 import { CiLocationOn } from "react-icons/ci";
 import "./ExploreRestaurants.css";
-import Link from 'next/link';
+import Link from "next/link";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { TiArrowSortedDown } from "react-icons/ti";
+import { GoSearch } from "react-icons/go";
 
 const ExploreRestaurants = () => {
-    return (
-        <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-[54px]">
+  return (
+    <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px]">
+      <div className="flex items-center justify-between py-[35px]">
+        <div className="w-full md:w-1/2">
+          <h5 className="text-4xl font-medium text-dark-50">
+            Explore <span className="text-primary">Restaurants</span>
+          </h5>
+          <p className="text-sm font-normal text-dark-200 pt-[4px]">
+            Check your city{" "}
+            <span className="font-medium">
+              {" "}
+              Near by <br /> Restaurant
+            </span>
+          </p>
+        </div>
+        <div className="w-full md:w-1/2 flex justify-between items-center border border-black rounded-full">
+          <button className="flex items-center gap-2 text-base font-normal text-gray-100 bg-primary py-2 px-[24px] rounded-l-full m-1">
+            <FaMapMarkerAlt className="mr-8" /> Location <TiArrowSortedDown />
+          </button>
+          <div className="p-3 rounded-full bg-primary mr-2">
+            <GoSearch className="text-white" />
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[26px] md:gap-[30px] lg:gap-[34px] xl:gap-[38px] 2xl:gap-[42px] 3xl:gap-[46px] 4xl:gap-[50px] 5xl:gap-[54px] pb-10">
         {topRestaurantsData?.map((data) => {
           return (
-            <div key={data?.id} className="explore_restaurants_cart_bg p-[16px]">
+            <div
+              key={data?.id}
+              className="explore_restaurants_cart_bg p-[16px]"
+            >
               <Image
                 src={data?.image}
                 alt={data?.name}
@@ -46,16 +74,16 @@ const ExploreRestaurants = () => {
                 <strong className="text-dark-100">Read More...</strong>
               </p>
               <Link href={`/explore-restaurants/${data?.id}`}>
-              <button className="w-full text-base font-bold bg-secondary text-gray py-[12px] rounded-[8px] ">
-                Visit
-              </button>
+                <button className="w-full text-base font-bold bg-secondary text-gray py-[12px] rounded-[8px] ">
+                  Visit
+                </button>
               </Link>
             </div>
           );
         })}
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ExploreRestaurants;

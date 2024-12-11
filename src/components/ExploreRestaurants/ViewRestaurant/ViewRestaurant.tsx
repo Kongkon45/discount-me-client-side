@@ -16,7 +16,7 @@ const ViewRestaurant: React.FC<ViewRestaurantProps> = ({ id }) => {
   );
 
   return (
-    <div className="container">
+    <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px]">
       {singleRestaurantData?.map((data) => (
         <div key={data?.id}>
           <Image
@@ -43,9 +43,9 @@ const ViewRestaurant: React.FC<ViewRestaurantProps> = ({ id }) => {
               <path
                 d="M5.50879 23.3014H25.3201M5.50879 15.7542H25.3201M5.50879 8.20703H25.3201"
                 stroke="#00B047"
-                stroke-width="3.01887"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="3.01887"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const TermsOfUse = () => {
   return (
-    <div className="container py-8">
+    <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px] py-8">
       <h4 className="text-4xl font-bold text-dark-100 pb-4">Terms of use.</h4>
       <p className="text-lg font-normal text-justify text-dark-200">
       Welcome to [Your Company Name]. Before using our logo design service, please carefully review the following Terms and Conditions, as they govern the contractual relationship between you (the "Client") and [Your Company Name] (the "Service Provider"). By using our logo design service, you acknowledge that you have read, understood, and agreed to these Terms and Conditions in their entirety

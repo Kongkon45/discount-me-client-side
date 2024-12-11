@@ -2,7 +2,7 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="container py-8">
+    <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px] py-8">
       <h4 className="text-4xl font-bold text-dark-100 pb-4">Privacy Policy</h4>
       <p className="text-lg font-normal text-justify text-dark-200">
         Welcome to [Your Company Name]. Before using our logo design service,

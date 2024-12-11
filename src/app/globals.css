@@ -9,19 +9,19 @@ body {
 
 
 .container {
-  @apply px-5 md:px-[40px] lg:px-[60px] xl:px-[80px] 2xl:px-[110px] 3xl:px-[140px] 4xl:px-[170px] 5xl:px-[200px]  mx-auto;
+  @apply px-[2px] md:px-[30px] lg:px-[50px] xl:px-[70px] 2xl:px-[200px]  mx-auto;
 }
 
 .padding__top{
-  @apply pt-[70px] md:pt-[90px] lg:pt-[110px] xl:pt-[130px] 2xl:pt-[150px];
+  @apply pt-[10px] md:pt-[20px] lg:pt-[30px] xl:pt-[40px] 2xl:pt-[50px];
 }
 
 .padding__bottom{
-  @apply pb-[70px] md:pb-[90px] lg:pb-[110px] xl:pb-[130px] 2xl:pb-[150px];
+  @apply pb-[10px] md:pb-[20px] lg:pb-[30px] xl:pb-[40px] 2xl:pb-[50px];
 }
 
 .padding__all{
-  @apply py-[70px] md:py-[90px] lg:py-[110px] xl:py-[130px] 2xl:py-[150px];
+  @apply py-[10px] md:py-[20px] lg:py-[30px] xl:py-[40px] 2xl:py-[50px];
 }
 
 .font_size{
@@ -61,7 +61,7 @@ body {
   }
 }
 @media screen and (min-width: 1400px) {
-  .custom-container {
+  .custom-container{
     width: 100%;
     margin: 0 auto;
   }

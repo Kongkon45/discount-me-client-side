@@ -2,7 +2,7 @@ import React from "react";
 
 const CouponPage = () => {
   return (
-    <div className="container py-10">
+    <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px] py-10">
       <div className="flex items-center justify-between gap-3 md:gap-20 py-4 px-3 md:px-20 rounded-lg border shadow-xl bg-white">
         <div className="w-2/5">
           <p className="text-secondary text-3xl font-medium">Price</p>

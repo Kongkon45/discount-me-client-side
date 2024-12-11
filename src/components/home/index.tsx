@@ -6,7 +6,7 @@ import Services from './Services/Services';
 
 const AllHomeComponents = () => {
     return (
-        <div>
+        <div className='custom-container'>
             <section>
             <HomeBanner/>
             </section>

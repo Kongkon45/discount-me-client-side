@@ -29,6 +29,7 @@ export default {
         },
         secondary: {
           DEFAULT: "#00B047",
+          50: "#9A9CAA",
         },
         dark: {
           DEFAULT: "#000000",
@@ -54,6 +55,7 @@ export default {
           600: "#999999",
           700: "#333333",
           800: "#B3B3B3",
+          900: "#272343",
         },
         
       },

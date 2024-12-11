@@ -11,7 +11,7 @@ import Link from "next/link";
 const ItemAllProducts = () => {
   const dispatch = useDispatch();
   return (
-    <div className="container pt-[46px]">
+    <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px] pt-[46px]">
       <ItemCategory />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 5xl:gap-5 py-[20px] md:py-[40px] xl:py-[50px] 5xl:py-[63px]">
         {itemsAllProductData?.map((data: any) => {

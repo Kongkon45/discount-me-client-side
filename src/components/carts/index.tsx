@@ -12,7 +12,7 @@ const CartsPage = () => {
     const dispatch = useDispatch();
     const totalPrice = productItem?.reduce((total: any, item: any) => total + (item?.quantity * item?.price), 0)
     return (
-        <div className="container">
+        <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px]">
             <h5 className="text-4xl font-bold text-dark-600 pt-10">My Shopping Cart</h5>
             <div className='lg:flex w-full gap-40 mt-10 lg:pb-[120px] pb-[60px]'>
             

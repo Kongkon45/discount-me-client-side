@@ -7,10 +7,10 @@ import Link from "next/link";
 
 const TopRestaurants = () => {
   return (
-    <div className="container">
+    <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px]">
       <div className="flex items-center justify-between pb-[35px]">
         <div>
-          <h5 className="text-4xl font-medium text-dark-50">
+          <h5 className="text-2xl lg:text-3xl xl:text-4xl font-medium text-dark-50">
             Explore <span className="text-primary">Top Restaurants</span>
           </h5>
           <p className="text-sm font-normal text-dark-200 pt-[4px]">
@@ -35,15 +35,15 @@ const TopRestaurants = () => {
                 <path
                   d="M7.875 4.375L14 10.5L7.875 16.625"
                   stroke="#232323"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[54px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[18px] lg:gap-[24px] xl:gap-[30px] 3xl:gap-[40px] 5xl:gap-[50px]">
         {topRestaurantsData?.slice(0,3)?.map((data) => {
           return (
             <div key={data?.id} className="restaurants_cart_bg p-[16px]">
@@ -54,15 +54,15 @@ const TopRestaurants = () => {
                 height={308}
               />
               <div className="flex justify-between items-center pt-1">
-                <h5 className="text-dark-50 text-[24px] 3xl:text-[32px] font-medium">
+                <h5 className="text-[20px] lg:text-[22px] xl:text-[24px] 2xl:text-[26px] 3xl:text-[28px] 4xl:text-[30px] 5xl:text-[32px] text-dark-50 font-medium">
                   {data?.name}
                 </h5>
-                <p className="flex items-center gap-2 text-dark-50 text-[24px] font-medium">
+                <p className="flex items-center gap-1 text-dark-50 text-[20px] md:text-[22px] xl:text-[24px] font-medium">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="33"
-                    height="34"
-                    viewBox="0 0 33 34"
+                    height="33"
+                    viewBox="0 0 33 33"
                     fill="none"
                   >
                     <path
@@ -80,7 +80,7 @@ const TopRestaurants = () => {
                 {data?.desc}{" "}
                 <strong className="text-dark-100">Read More...</strong>
               </p>
-              <button className="w-full text-base font-bold bg-secondary text-gray py-[12px] rounded-[8px] ">
+              <button className="w-full text-base font-bold bg-secondary text-gray-100 py-[10px] rounded-[8px] ">
                 Visit
               </button>
             </div>

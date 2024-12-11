@@ -14,7 +14,7 @@ const ItemAllProductView = ({ id }: any) => {
     <div>
       {/* category banner add  */}
       <CategoryBanner/>
-      <div className="container py-[50px]">
+      <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px] py-[50px]">
       {filterItemAllProductView?.map((data: any) => {
         return (
           <div key={data?.id} className="flex items-center gap-8">
@@ -124,9 +124,9 @@ const ItemAllProductView = ({ id }: any) => {
                       <path
                         d="M2.97363 8.80371H13.7211"
                         stroke="#666666"
-                        stroke-width="1.72727"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.72727"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </button>
@@ -142,9 +142,9 @@ const ItemAllProductView = ({ id }: any) => {
                       <path
                         d="M3.18652 8.80245H13.934M8.56026 3.42871V14.1762V3.42871Z"
                         stroke="#1A1A1A"
-                        stroke-width="1.72727"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.72727"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </button>
@@ -162,9 +162,9 @@ const ItemAllProductView = ({ id }: any) => {
                     <path
                       d="M6.40442 7.88416H3.52564L1.60645 18.4397H18.8792L16.96 7.88416H14.0812M6.40442 7.88416V5.00537C6.40442 2.88549 8.12293 1.16699 10.2428 1.16699V1.16699C12.3627 1.16699 14.0812 2.8855 14.0812 5.00538V7.88416M6.40442 7.88416H14.0812M6.40442 7.88416V10.763M14.0812 7.88416V10.763"
                       stroke="white"
-                      stroke-width="1.49697"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.49697"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>
@@ -183,23 +183,23 @@ const ItemAllProductView = ({ id }: any) => {
                       <path
                         d="M8.21419 18.6364C8.67443 18.6364 9.04753 18.2633 9.04753 17.8031C9.04753 17.3428 8.67443 16.9697 8.21419 16.9697C7.75396 16.9697 7.38086 17.3428 7.38086 17.8031C7.38086 18.2633 7.75396 18.6364 8.21419 18.6364Z"
                         stroke="#232323"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                       <path
                         d="M17.3773 18.6364C17.8375 18.6364 18.2106 18.2633 18.2106 17.8031C18.2106 17.3428 17.8375 16.9697 17.3773 16.9697C16.917 16.9697 16.5439 17.3428 16.5439 17.8031C16.5439 18.2633 16.917 18.6364 17.3773 18.6364Z"
                         stroke="#232323"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                       <path
                         d="M1.54297 1.13672H4.8763L7.10964 12.2951C7.18584 12.6787 7.39456 13.0234 7.69926 13.2686C8.00395 13.5139 8.38522 13.6442 8.7763 13.6367H16.8763C17.2674 13.6442 17.6487 13.5139 17.9533 13.2686C18.258 13.0234 18.4668 12.6787 18.543 12.2951L19.8763 5.30339H5.70964"
                         stroke="#232323"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </g>
                     <defs>
