@@ -89,3 +89,8 @@ body {
   box-shadow: 0px 3.553px 14.214px 0px rgba(0, 0, 0, 0.08);
 }
 
+.navigation_cart_bg{
+  border-radius: 9.212px;
+border: 1.152px solid var(--Gray-Scale-Gray-100, #E6E6E6);
+background: var(--Gray-Scale-White, #FFF);
+}

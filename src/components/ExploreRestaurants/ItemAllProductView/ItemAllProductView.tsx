@@ -2,6 +2,8 @@ import React from "react";
 import itemAllProductViewData from "../../../itemAllProducts.json";
 import reviewData from "../../../reviewData.json";
 import Image from "next/image";
+import Link from "next/link";
+import CategoryBanner from "@/components/CategoryBanner/CategoryBanner";
 
 const ItemAllProductView = ({ id }: any) => {
   const filterItemAllProductView = itemAllProductViewData?.filter(
@@ -9,7 +11,10 @@ const ItemAllProductView = ({ id }: any) => {
   );
   console.log(filterItemAllProductView);
   return (
-    <div className="container py-[50px]">
+    <div>
+      {/* category banner add  */}
+      <CategoryBanner/>
+      <div className="container py-[50px]">
       {filterItemAllProductView?.map((data: any) => {
         return (
           <div key={data?.id} className="flex items-center gap-8">
@@ -144,6 +149,7 @@ const ItemAllProductView = ({ id }: any) => {
                     </svg>
                   </button>
                 </div>
+                <Link href="/cart/checkout">
                 <button className="flex items-center gap-5 text-lg font-semibold text-white bg-primary rounded-full py-2 px-6 md:px-10 xl:px-12 5xl:px-16">
                   Checkout{" "}
                   <svg
@@ -162,6 +168,9 @@ const ItemAllProductView = ({ id }: any) => {
                     />
                   </svg>
                 </button>
+                </Link>
+                
+                <Link href="/cart">
                 <button className="p-3 rounded-full bg-gray-400">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -205,6 +214,8 @@ const ItemAllProductView = ({ id }: any) => {
                     </defs>
                   </svg>
                 </button>
+                </Link>
+                
               </div>
             </div>
           </div>
@@ -256,6 +267,7 @@ const ItemAllProductView = ({ id }: any) => {
           );
         })}
       </div>
+    </div>
     </div>
   );
 };
