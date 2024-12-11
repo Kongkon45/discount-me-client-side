@@ -18,7 +18,7 @@ const Footer = () => {
                 className="w-[207px] h-[59px] mx-auto md:mx-0"
               />
             </Link>
-            <p className="text-sm text-gray-100 font-normal pt-[20px] md:pt-[25px] lg:pt-[30px] text-center md:text-left">
+            <p className="text-sm text-gray-100 font-normal pt-[20px] lg:pt-[30px] text-center md:text-left">
               Ecommerce is a free UI Kit from Paperpillar <br/> that you can use for
               your personal or <br/> commercial project.
             </p>
@@ -32,7 +32,7 @@ const Footer = () => {
             <h6 className="text-lg font-bold text-gray text-center md:text-left">
               Account
             </h6>
-            <ul className="pt-[20px] md:pt-[25px] lg:pt-[30px] text-gray-100 text-center md:text-left">
+            <ul className="pt-[20px]  lg:pt-[30px] text-gray-100 text-center md:text-left">
               <li className="text-sm md:text-base font-normal">Immigration</li>
               <li className="text-sm md:text-base font-normal py-[12px] md:py-[15px]">
                 My Account
@@ -57,7 +57,7 @@ const Footer = () => {
             <h6 className="text-lg font-bold text-gray text-center md:text-left">
               Quick Link
             </h6>
-            <ul className="pt-[20px] md:pt-[25px] lg:pt-[30px] text-gray-100 text-center md:text-left">
+            <ul className="pt-[20px]  lg:pt-[30px] text-gray-100 text-center md:text-left">
               
 
               <Link href="/privacy-policy">
@@ -82,7 +82,7 @@ const Footer = () => {
             <h6 className="text-lg font-bold text-gray text-center md:text-left">
               Support
             </h6>
-            <ul className="pt-[20px] md:pt-[25px] lg:pt-[30px] text-gray-100 text-center md:text-left">
+            <ul className="pt-[20px]  lg:pt-[30px] text-gray-100 text-center md:text-left">
               <li className="text-sm md:text-base font-normal">
                 exclusive@gmail.com
               </li>
@@ -96,7 +96,7 @@ const Footer = () => {
               Download App
             </h6>
             <div className="hidden md:block">
-            <div className="w-full flex justify-center md:justify-start items-center gap-2 pt-[20px] md:pt-[25px] lg:pt-[30px]">
+            <div className="w-full flex justify-center md:justify-start items-center gap-2 pt-[20px]  lg:pt-[30px]">
               <div className="w-full md:w-2/5 ">
                 <Image
                   src="/assets/homePage/qr_codd.png"
@@ -122,7 +122,7 @@ const Footer = () => {
             </div>
             </div>
             <div className="block md:hidden">
-            <div className="w-full flex justify-center items-center gap-2 pt-[20px] md:pt-[25px] lg:pt-[30px]">
+            <div className="w-full flex justify-center items-center gap-2 pt-[20px]  lg:pt-[30px]">
               <div className="w-1/2">
                 <Image
                   src="/assets/homePage/qr_codd.png"
