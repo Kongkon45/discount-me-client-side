@@ -4,6 +4,7 @@ import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import Swal from "sweetalert2";
 
 interface IFormInput {
   firstName: string;
@@ -97,23 +98,18 @@ const CheckoutPage = () => {
   );
 
   const { register, handleSubmit, reset } = useForm<IFormInput>();
-  const onSubmit: SubmitHandler<IFormInput> = (data) => {
+  const onSubmit: SubmitHandler<IFormInput> = (data:any) => {
     data.subTotal = totalPrice;
-    // data.productId = productItem.map((id:any)=>id._id === productItem._id)
     console.log(data);
-
-    // https://raf-cart-server-side.vercel.app/
-
-    // fetch("https://raf-cart-server-side.vercel.app/api/order", {
-    //   method: "POST",
-    //   headers: { "content-type": "application/json" },
-    //   body: JSON.stringify(data),
-    // })
-    //   .then((res) => res.json())
-    //   .then((result) => {
-    //     window.location.replace(result.url);
-    //     console.log(result);
-    //   });
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Order Successfully",
+      text: "If you want to track your order, please install our app from Play Store or App Store",
+      showConfirmButton: false,
+      timer: 5000
+    });
+    
     reset();
   };
   return (
