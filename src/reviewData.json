@@ -1,0 +1,30 @@
+[
+    {
+        "id" : 1,
+        "img" : "/assets/homePage/review/kristin.png",
+        "name" : "Kristin Watson",
+        "review" : "Duis at ullamcorper nulla, eu dictum eros.",
+        "date" : "2 min ago"
+    },
+    {
+        "id" : 2,
+        "img" : "/assets/homePage/review/jane.png",
+        "name" : "Jane Cooper",
+        "review" : "Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to 'bolt' or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.",
+        "date" : "30 Apr, 2021"
+    },
+    {
+        "id" : 3,
+        "img" : "/assets/homePage/review/jacob.png",
+        "name" : "Jacob Jones",
+        "review" : " Vivamus eget euismod magna. Nam sed lacinia nibh, et lacinia lacus.",
+        "date" : "2 min ago"
+    },
+    {
+        "id" : 4,
+        "img" : "/assets/homePage/review/ralph.png",
+        "name" : "Ralph Edwards",
+        "review" : "200+ Canton Pak Choi Bok Choy Chinese Cabbage Seeds Heirloom Non-GMO Productive Brassica rapa VAR. chinensis, a.k.a. Canton's Choice, Bok Choi, from USA",
+        "date" : "2 min ago"
+    }
+]
