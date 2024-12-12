@@ -74,7 +74,7 @@ const SignUpForm = () => {
           {errors.confirmPassword && <span>This field is required</span>}
           <div className="flex items-center gap-1 py-[20px]">
               <input
-                className="w-[29px] h-[29px]"
+                className="w-[22px] h-[22px] md:w-[24px] md:h-[24px]"
                 type="checkbox"
                 name="check"
               />

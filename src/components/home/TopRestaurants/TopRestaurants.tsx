@@ -23,9 +23,10 @@ const TopRestaurants = () => {
         </div>
         <div>
           <Link href={`/explore-restaurants`}>
-            <button className="flex items-center gap-1 text-base font-normal text-dark-100">
+            <button className="flex items-center gap-1 text-base font-normal text-dark-100 hover:text-primary">
               See All{" "}
               <svg
+                className=""
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
