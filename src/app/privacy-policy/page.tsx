@@ -3,7 +3,7 @@ import React from "react";
 const PrivacyPolicy = () => {
   return (
     <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px] py-8">
-      <h4 className="text-4xl font-bold text-dark-100 pb-4">Privacy Policy</h4>
+      <h4 className="text-2xl md:text-3xl lg:text-4xl font-bold text-dark-100 pb-4">Privacy Policy</h4>
       <p className="text-lg font-normal text-justify text-dark-200">
         Welcome to [Your Company Name]. Before using our logo design service,
         please carefully review the following Terms and Conditions, as they
@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
         service, you acknowledge that you have read, understood, and agreed to
         these Terms and Conditions in their entirety.
       </p>
-      <h4 className="text-4xl font-bold text-dark-100 py-4">
+      <h4 className="text-2xl md:text-3xl lg:text-4xl font-bold text-dark-100 py-4">
         → What data do we process?
       </h4>
       <ul>
@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
           fee.
         </li>
       </ul>
-      <h4 className="text-4xl font-bold text-dark-100 py-4">
+      <h4 className="text-2xl md:text-3xl lg:text-4xl font-bold text-dark-100 py-4">
         → What are your rights?
       </h4>
       <ul>

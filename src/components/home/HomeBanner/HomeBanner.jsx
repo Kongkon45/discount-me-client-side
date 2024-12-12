@@ -32,7 +32,7 @@ const HomeBanner = () => {
             memories
           </h1>
           <p className="text-lg font-normal text-black leading-normal mt-[25px]">
-            Enable diners to customize their booking by <br /> requesting a
+            Enable diners to customize their booking by <br className="hidden md:block"/> requesting a
             specific table location or view.
           </p>
           <div className="flex justify-between items-center border border-black rounded-full mt-8">

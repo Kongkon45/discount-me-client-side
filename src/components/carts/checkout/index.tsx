@@ -123,11 +123,11 @@ const CheckoutPage = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="lg:flex w-full mt-6 lg:px-0 px-10">
           <div className="lg:w-2/4 w-full mx-auto">
-            <h2 className="text-4xl font-normal text-dark-600 pt-10">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl text-center md:text-left font-bold text-dark-600 pt-3 md:pt-7 lg:pt-10">
               Billing Information
             </h2>
             <div className="border rounded-lg p-6 my-6 profile__bg">
-              <div className="flex gap-10 items-center">
+              <div className="flex gap-4 md:gap-7 lg:gap-10 items-center">
                 <div className="w-1/3">
                   <label className="text-sm font-normal" htmlFor="firstName">
                     First Name :{" "}
@@ -178,7 +178,7 @@ const CheckoutPage = () => {
                 />
               </div>
 
-              <div className="flex gap-10 my-4">
+              <div className="flex gap-4 md:gap-7 lg:gap-10 my-4">
                 <div className="w-1/2">
                   <label className="text-sm font-normal" htmlFor="country">
                     Country / Region
@@ -214,7 +214,7 @@ const CheckoutPage = () => {
                   </select>
                 </div>
               </div>
-              <div className="flex gap-10 my-4">
+              <div className="flex gap-4 md:gap-7 lg:gap-10 my-4">
                 <div className="w-1/2 my-4">
                   <label className="text-sm font-normal" htmlFor="email">
                     Email Address :{" "}

@@ -25,11 +25,11 @@ const ViewRestaurant: React.FC<ViewRestaurantProps> = ({ id }) => {
             width={1475}
             height={605}
           />
-          <h5 className="text-3xl py-4 font-bold text-black border-b-2">
+          <h5 className="text-2xl md:text-3xl py-4 font-bold text-black border-b-2">
             {data?.name}
           </h5>
           <div className="flex items-center gap-5 md:gap-16 lg:gap-24 xl:gap-28 3xl:gap-32 5xl:gap-36">
-            <p className="flex items-center gap-1 text-dark-100 text-base font-normal pt-[30px] pb-[20px]">
+            <p className="flex items-center gap-1 text-dark-100 text-base font-normal pt-[20px] md:pt-[30px] pb-[20px]">
               <PiMapPinLineDuotone className="w-[27px] h-[27px] text-secondary" />{" "}
               {data?.location}
             </p>
@@ -54,6 +54,7 @@ const ViewRestaurant: React.FC<ViewRestaurantProps> = ({ id }) => {
       <div>
         <p className="flex items-center gap-[20px]">
           <svg
+            className="w-[180px] h-[35px] md:w-[244px] md:h-[40px]"
             xmlns="http://www.w3.org/2000/svg"
             width="244"
             height="40"
@@ -81,12 +82,12 @@ const ViewRestaurant: React.FC<ViewRestaurantProps> = ({ id }) => {
               fill="#BEBEBE"
             />
           </svg>
-          <span className="text-dark-300  text-4xl font-bold ">4.3</span>
+          <span className="text-dark-300  text-2xl md:text-3xl lg:text-4xl font-bold ">4.3</span>
         </p>
         <div className="flex items-center justify-between py-12">
-            <h4 className="text-3xl font-bold text-dark-300">Items🔥</h4>
+            <h4 className="text-2xl md:text-3xl font-bold text-dark-300">Items🔥</h4>
             <Link href="/explore-restaurants/view-items">
-            <button className="text-2xl font-normal text-secondary pt-[6px] pb-[8px] px-[16px] seeAll_button">See all</button>
+            <button className="text-[22px] md:text-2xl font-normal text-secondary pt-[6px] pb-[8px] px-[16px] seeAll_button">See all</button>
             </Link>
         </div>
         {/* items category  */}

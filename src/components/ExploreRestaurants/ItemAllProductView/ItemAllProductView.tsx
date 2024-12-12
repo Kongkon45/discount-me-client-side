@@ -14,11 +14,11 @@ const ItemAllProductView = ({ id }: any) => {
     <div>
       {/* category banner add  */}
       <CategoryBanner/>
-      <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px] py-[50px]">
+      <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px] py-[30px] md:py-[50px]">
       {filterItemAllProductView?.map((data: any) => {
         return (
-          <div key={data?.id} className="flex items-center gap-8">
-            <div className="w-1/2">
+          <div key={data?.id} className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="md:col-span-1">
               <Image
                 src={data?.img}
                 alt={data?.title}
@@ -26,8 +26,8 @@ const ItemAllProductView = ({ id }: any) => {
                 height={453}
               />
             </div>
-            <div className="w-1/2">
-              <h4 className="flex items-center gap-5 text-dark-400 text-4xl font-semibold">
+            <div className="md:col-span-1">
+              <h4 className="flex items-center gap-5 text-dark-400 text-3xl md:text-4xl font-semibold">
                 {data?.title}
                 <button className="text-base font-normal text-primary bg-primary-50 py-[5px] px-[10px] rounded-lg">
                   In Stock

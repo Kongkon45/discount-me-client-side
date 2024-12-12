@@ -10,7 +10,7 @@ const TopRestaurants = () => {
     <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px]">
       <div className="flex items-center justify-between pb-[35px]">
         <div>
-          <h5 className="text-2xl lg:text-3xl xl:text-4xl font-medium text-dark-50">
+          <h5 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-dark-50">
             Explore <span className="text-primary">Top Restaurants</span>
           </h5>
           <p className="text-sm font-normal text-dark-200 pt-[4px]">

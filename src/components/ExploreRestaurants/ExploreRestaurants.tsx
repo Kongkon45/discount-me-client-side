@@ -11,9 +11,9 @@ import { GoSearch } from "react-icons/go";
 const ExploreRestaurants = () => {
   return (
     <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px]">
-      <div className="flex items-center justify-between py-[35px]">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between py-[35px]">
         <div className="w-full md:w-1/2">
-          <h5 className="text-4xl font-medium text-dark-50">
+          <h5 className="text-2xl md:text-3xl lg:text-4xl font-medium text-dark-50">
             Explore <span className="text-primary">Restaurants</span>
           </h5>
           <p className="text-sm font-normal text-dark-200 pt-[4px]">
@@ -24,7 +24,7 @@ const ExploreRestaurants = () => {
             </span>
           </p>
         </div>
-        <div className="w-full md:w-1/2 flex justify-between items-center border border-black rounded-full">
+        <div className="w-full md:w-1/2 flex justify-between items-center border border-black rounded-full mt-4 md:mt-0">
           <button className="flex items-center gap-2 text-base font-normal text-gray-100 bg-primary py-2 px-[24px] rounded-l-full m-1">
             <FaMapMarkerAlt className="mr-8" /> Location <TiArrowSortedDown />
           </button>

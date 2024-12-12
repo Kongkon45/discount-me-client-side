@@ -20,10 +20,10 @@ const CartsPage = () => {
   );
   return (
     <div className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px]">
-      <h5 className="text-4xl font-bold text-dark-600 pt-10">
+      <h5 className="text-2xl md:text-4xl font-bold text-dark-600 py-5 md:py-10 text-center md:text-left">
         My Shopping Cart
       </h5>
-      <div className="lg:flex w-full gap-40 mt-10 lg:pb-[120px] pb-[60px] ">
+      <div className="lg:flex w-full gap-40 lg:pb-[120px] md:pb-[60px] pb-[30px]">
         <div className="lg:w-7/12 w-full profile__bg p-6 bg-white">
           <h2 className="flex justify-around text-xl font-semibold rounded-lg bg-[#e9e4e4] text-black py-1 ">
             <span className="lg:text-base text-sm">Product</span>
@@ -41,7 +41,7 @@ const CartsPage = () => {
                 return (
                   <li
                     key={product?.id}
-                    className="flex justify-between items-center gap-3 border-2 rounded-md py-2 px-4 my-3"
+                    className="flex justify-between items-center gap-3 border-b-2 md:border-2 rounded-md py-2 px-4 my-3"
                   >
                     <img
                       className="lg:w-20 lg:h-20 w-12 h-12"
@@ -86,10 +86,10 @@ const CartsPage = () => {
           {/* button  */}
           <div className="flex items-center justify-between">
             <Link href={`/explore-restaurants/view-items`}>
-            <button className="py-[12px] px-[36px] rounded-full text-base font-semibold text-dark-900 bg-gray-500">Return to shop</button>
+            <button className="py-[12px] px-[20px] md:px-[36px] rounded-full text-base font-semibold text-dark-900 bg-gray-500">Return to shop</button>
             </Link>
             
-            <button className="py-[12px] px-[36px] rounded-full text-base font-semibold text-dark-900 bg-gray-500">Update Cart</button>
+            <button className="py-[12px] px-[20px] md:px-[36px] rounded-full text-base font-semibold text-dark-900 bg-gray-500">Update Cart</button>
           </div>
         </div>
         <div className="lg:w-4/12 w-full border rounded-lg shadow-lg p-4 my-3 profile__bg">
