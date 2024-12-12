@@ -124,19 +124,19 @@ const Navbar = () => {
                 {hoverCategory ? <IoIosArrowDown /> : <IoIosArrowUp />}
               </Link>
               <Link
-                href="#"
+                href="/coupon"
                 className="block text-base 2xl:text-lg font-normal text-dark-300 hover:text-primary py-2"
               >
                 Coupon
               </Link>
               <Link
-                href="#"
+                href="/support"
                 className="block text-base 2xl:text-lg font-normal text-dark-300 hover:text-primary py-2"
               >
                 Support
               </Link>
               <Link
-                href="#"
+                href="/dashboard"
                 className="block text-base 2xl:text-lg font-normal text-dark-300 hover:text-primary py-2"
               >
                 Dashboard

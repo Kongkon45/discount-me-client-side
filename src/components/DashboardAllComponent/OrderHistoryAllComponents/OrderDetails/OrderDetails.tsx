@@ -9,9 +9,12 @@ const OrderDetails = () => {
         <SideBar />
       </div>
       <div className="md:col-span-3">
+      <h5 className="block md:hidden text-center text-lg md:text-xl lg:text-2xl font-medium text-dark-400 pr-1 md:pr-3 pb-2">
+              Order Details
+            </h5>
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-5">
-            <h5 className="text-2xl font-medium text-dark-400 pr-3">
+          <div className="flex items-center gap-2 md:gap-5">
+            <h5 className="hidden md:block text-lg md:text-xl lg:text-2xl font-medium text-dark-400 pr-1 md:pr-3">
               Order Details
             </h5>
             <ul className="list-disc pl-5 flex items-center gap-8">
@@ -23,7 +26,7 @@ const OrderDetails = () => {
               </li>
             </ul>
           </div>
-          <button className="text-lg font-medium text-primary cursor-pointer">
+          <button className="text-base md:text-lg font-medium text-primary cursor-pointer">
             <Link href="/dashboard/order-history">Back to List</Link>
           </button>
         </div>
