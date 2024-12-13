@@ -31,11 +31,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased custom-container`}
       >
+        <main className="overflow-hidden">
         <ReduxProvider>
           <Navbar />
           {children}
           <Footer />
         </ReduxProvider>
+        </main>
+        
       </body>
     </html>
   );

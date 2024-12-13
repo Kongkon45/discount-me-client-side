@@ -30,6 +30,8 @@ export default {
         secondary: {
           DEFAULT: "#00B047",
           50: "#9A9CAA",
+          100: "#575858",
+          200: "#FDFDFE",
         },
         dark: {
           DEFAULT: "#000000",

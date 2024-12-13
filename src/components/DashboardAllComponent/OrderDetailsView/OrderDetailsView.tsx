@@ -56,7 +56,7 @@ const OrderDetailsView = () => {
             </ul>
           </div>
           <button className="text-base md:text-lg font-medium text-primary cursor-pointer underline">
-            <Link href="/dashboard/order-history">Share Review</Link>
+            <Link href="/dashboard/order-details/share-review">Share Review</Link>
           </button>
         </div>
         {/* second part  */}
@@ -166,16 +166,16 @@ const OrderDetailsView = () => {
         
         {/* product order cart  */}
         <table className="w-full mt-14">
-          <thead className="bg-[#F2F2F2] py-10 ">
-            <th className="text-sm font-medium text-dark-900">Product</th>
-            <th className="text-sm font-medium text-dark-900">Price</th>
-            <th className="text-sm font-medium text-dark-900">Quantity</th>
-            <th className="text-sm font-medium text-dark-900">Subtotal</th>
+          <thead className="bg-[#F2F2F2]">
+            <th className="text-sm font-medium text-dark-900 py-2">Product</th>
+            <th className="text-sm font-medium text-dark-900 py-2">Price</th>
+            <th className="text-sm font-medium text-dark-900 py-2">Quantity</th>
+            <th className="text-sm font-medium text-dark-900 py-2">Subtotal</th>
           </thead>
-          <tbody>
+          <tbody className="">
             {productCartData?.map((data) => (
               <tr className="">
-                <td className="flex items-center justify-center gap-6">
+                <td className="flex items-center justify-center gap-6 my-2">
                   {/* <Image src={data?.image} alt={data?.title} width={75} height={75} /> */}
                   <div className="flex items-center justify-center gap-6">
                     <Image
@@ -189,13 +189,13 @@ const OrderDetailsView = () => {
                     </p>
                   </div>
                 </td>
-                <td className="text-center text-base font-medium text-dark-400">
+                <td className="text-center text-base font-medium text-dark-400 my-2">
                   {data?.price}
                 </td>
-                <td className="text-center text-base font-medium text-dark-400">
+                <td className="text-center text-base font-medium text-dark-400 my-2">
                   {data?.quantity}
                 </td>
-                <td className="text-center text-base font-medium text-dark-400">
+                <td className="text-center text-base font-medium text-dark-400 my-2">
                   {data?.subTotal}
                 </td>
               </tr>
