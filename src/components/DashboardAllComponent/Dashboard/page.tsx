@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const orderData = [
@@ -114,9 +115,11 @@ const Dashboard = () => {
                 </td>
 
                 <td className="border border-gray-200 p-2 text-center">
+                  <Link href="/dashboard/order-details">
                   <button className="text-primary-100 cursor-pointer">
                     {order?.view}
                   </button>
+                  </Link>
                 </td>
               </tr>
             ))}
