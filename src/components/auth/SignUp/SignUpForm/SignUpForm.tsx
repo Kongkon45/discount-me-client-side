@@ -74,7 +74,7 @@ const SignUpForm = () => {
           {errors.confirmPassword && <span>This field is required</span>}
           <div className="flex items-center gap-1 py-[20px]">
               <input
-                className="w-[22px] h-[22px] md:w-[24px] md:h-[24px]"
+                className="w-[22px] h-[22px]"
                 type="checkbox"
                 name="check"
               />
@@ -97,9 +97,9 @@ const SignUpForm = () => {
           </div>
         </form>
         <p className="text-[20px] text-dark-500 font-normal text-center pt-[15px]">
-            Already have an Account? 
+            Already have an Account?  
           <Link className="font-medium" href="/signin">
-             Login
+              Login
           </Link>
         </p>
       </div>

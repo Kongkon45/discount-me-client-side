@@ -29,28 +29,28 @@ const Footer = () => {
             </div>
           </div>
           <div className="md:col-span-2">
-            <h6 className="text-lg font-bold text-gray text-center md:text-left">
+            <h6 className="text-lg font-bold text-gray text-center md:text-left hover:text-primary">
               Account
             </h6>
             <ul className="pt-[20px]  lg:pt-[30px] text-gray-100 text-center md:text-left">
-              <li className="text-sm md:text-base font-normal">Immigration</li>
-              <li className="text-sm md:text-base font-normal py-[12px] md:py-[15px]">
+              <li className="text-sm md:text-base font-normal hover:text-primary cursor-pointer">Immigration</li>
+              <li className="text-sm md:text-base font-normal py-[12px] md:py-[15px] hover:text-primary cursor-pointer">
                 My Account
               </li>
               <Link href="/signin">
-              <li className="text-sm md:text-base font-normal">
+              <li className="text-sm md:text-base font-normal hover:text-primary cursor-pointer">
                 Login / Register
               </li>
               </Link>
               
               <Link href="/cart">
-              <li className="text-sm md:text-base font-normal py-[12px] md:py-[15px]">
+              <li className="text-sm md:text-base font-normal py-[12px] md:py-[15px] hover:text-primary cursor-pointer">
                 Cart
               </li>
               </Link>
               
-              <li className="text-sm md:text-base font-normal">Wishlist</li>
-              <li className="text-sm md:text-base font-normal pt-[12px] md:pt-[15px]">Shop</li>
+              <li className="text-sm md:text-base font-normal hover:text-primary cursor-pointer">Wishlist</li>
+              <li className="text-sm md:text-base font-normal pt-[12px] md:pt-[15px] hover:text-primary cursor-pointer">Shop</li>
             </ul>
           </div>
           <div className="md:col-span-2 lg:col-span-2">
@@ -61,20 +61,20 @@ const Footer = () => {
               
 
               <Link href="/privacy-policy">
-              <li className="text-sm md:text-base font-normal">
+              <li className="text-sm md:text-base font-normal hover:text-primary cursor-pointer">
                 Privacy Policy
               </li>
               </Link>
 
               <Link href="/terms-of-use">
-              <li className="text-sm md:text-base font-normal py-[12px] md:py-[15px]">
+              <li className="text-sm md:text-base font-normal py-[12px] md:py-[15px] hover:text-primary cursor-pointer">
                 Terms Of Use
               </li>
               </Link>
               
-              <li className="text-sm md:text-base font-normal">FAQ</li>
-              <li className="text-sm md:text-base font-normal py-[12px] md:py-[15px]">Contact</li>
-              <Link href="/about"><li className="text-sm md:text-base font-normal">About</li></Link>
+              <li className="text-sm md:text-base font-normal hover:text-primary cursor-pointer">FAQ</li>
+              <li className="text-sm md:text-base font-normal py-[12px] md:py-[15px] hover:text-primary cursor-pointer">Contact</li>
+              <Link href="/about"><li className="text-sm md:text-base font-normal hover:text-primary cursor-pointer">About</li></Link>
               
             </ul>
           </div>
@@ -83,10 +83,10 @@ const Footer = () => {
               Support
             </h6>
             <ul className="pt-[20px]  lg:pt-[30px] text-gray-100 text-center md:text-left">
-              <li className="text-sm md:text-base font-normal">
+              <li className="text-sm md:text-base font-normal hover:text-primary cursor-pointer">
                 exclusive@gmail.com
               </li>
-              <li className="text-sm md:text-base font-normal py-[12px] md:py-[15px]">
+              <li className="text-sm md:text-base font-normal py-[12px] md:py-[15px] hover:text-primary cursor-pointer">
                 +88015-88888-9999
               </li>
             </ul>

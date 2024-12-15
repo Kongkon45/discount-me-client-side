@@ -32,7 +32,7 @@ const SignInForm = () => {
         {errors.password && <span>This field is required</span>}
         <div className="flex justify-between items-center py-[20px]">
             <div className="flex items-center gap-1">
-            <input className="w-[22px] h-[22px] md:w-[24px] md:h-[24px]" type="checkbox" name="check" />
+            <input className="w-[22px] h-[22px]" type="checkbox" name="check" />
             <label className="text-[20px] text-dark-500 font-normal" htmlFor="check">Remember me</label>
             </div>
             <div>

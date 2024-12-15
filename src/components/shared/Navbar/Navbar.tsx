@@ -16,10 +16,9 @@ const Navbar = () => {
   const [hoverCategory, setHoverCategory] = useState(true);
 
   return (
-    <div className="sticky top-0 z-50">
-      <div className="bg-white py-4">
+    <div className="sticky top-0 z-50 bg-white py-4">
         <nav className="px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-44 5xl:px-[200px]">
-          <div className=" flex items-center justify-between">
+          <div className="flex items-center justify-between">
             {/* Left side: Logo */}
             <div className="text-white text-2xl font-bold">
               <Link href="/">
@@ -145,7 +144,6 @@ const Navbar = () => {
           )}
         </nav>
       </div>
-    </div>
   );
 };
 

@@ -82,9 +82,12 @@ const Dashboard = () => {
           <h5 className="text-2xl font-medium text-dark-400">
             Recent Order History
           </h5>
+          <Link href="/dashboard/order-history">
           <p className="text-lg font-medium text-primary cursor-pointer">
             View All
           </p>
+          </Link>
+          
         </div>
         <table className="w-full border-collapse border border-gray-200 mt-4">
           <thead>

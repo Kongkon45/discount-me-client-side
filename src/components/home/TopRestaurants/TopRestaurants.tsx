@@ -4,6 +4,7 @@ import Image from "next/image";
 import "./TopRestaurants.css";
 import { CiLocationOn } from "react-icons/ci";
 import Link from "next/link";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const TopRestaurants = () => {
   return (
@@ -21,25 +22,11 @@ const TopRestaurants = () => {
             </span>
           </p>
         </div>
-        <div>
+        <div className="group">
           <Link href={`/explore-restaurants`}>
-            <button className="flex items-center gap-1 text-base font-normal text-dark-100 hover:text-primary">
+            <button className="flex items-center gap-1 text-base font-normal text-dark-100 group-hover:text-primary">
               See All{" "}
-              <svg
-                className=""
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 21 21"
-                fill="none"
-              >
-                <path
-                  d="M7.875 4.375L14 10.5L7.875 16.625"
-                  stroke="#232323"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <MdKeyboardArrowRight className="w-[20px] h-[20px] mt-1 group-hover:text-primary"/>
             </button>
           </Link>
         </div>
