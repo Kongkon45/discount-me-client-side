@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="md:col-span-2">
-            <h6 className="text-lg font-bold text-gray text-center md:text-left hover:text-primary">
+            <h6 className="text-lg font-bold text-gray text-center md:text-left">
               Account
             </h6>
             <ul className="pt-[20px]  lg:pt-[30px] text-gray-100 text-center md:text-left">

@@ -68,9 +68,12 @@ const TopRestaurants = () => {
                 {data?.desc}{" "}
                 <strong className="text-dark-100">Read More...</strong>
               </p>
+              <Link href={`/explore-restaurants/${data?.id}`}>
               <button className="w-full text-base font-bold bg-secondary text-gray-100 py-[10px] rounded-[8px] ">
                 Visit
               </button>
+              </Link>
+             
             </div>
           );
         })}
